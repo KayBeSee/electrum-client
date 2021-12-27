@@ -210,7 +210,7 @@ class ElectrumClient extends Client {
 	blockchainEstimatefee(number) {
 		return this.request('blockchain.estimatefee', [number]);
 	}
-	blockchainHeaders_subscribe(raw) {
+	blockchainHeaders_subscribe() {
 		return this.request('blockchain.headers.subscribe');
 	}
 	blockchain_relayfee() {
